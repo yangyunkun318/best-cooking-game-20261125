@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golden Ladle — Bistro Rush</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #1c130c; color: #f5efe4;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1280px; margin: 0 auto; padding: 12px; }
+  h1 { font-size: 20px; margin: 4px 0 10px; color: #f2c94c; }
+  canvas { display: block; width: 100%; height: auto; background: #3d2b1f;
+    border-radius: 8px; }
+  #status { min-height: 1.4em; color: #c9b8a3; }
+  .help { color: #c9b8a3; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Golden Ladle — Bistro Rush</h1>
+<canvas id="game" width="1280" height="720"></canvas>
+<p id="status" aria-live="polite"></p>
+<p class="help">Click ingredients on the counter to build the dish on your plate, then serve
+before the order ticket runs out. Keys 1–6 add ingredients, Space serves,
+X clears the plate, P pauses.</p>
+</main>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
